@@ -16,9 +16,11 @@ title: Blog
 
       <h3>{{ post.date | date_to_string }}</h3>
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-      {% if post.author %}
-        <h3>By {{ post.author }}</h3>
+
+      {% if post.authors %}
+        <h3>By {{ post.authors | join: " and " }}</h3>
       {% endif %}
+      
       <p>{{ post.excerpt }}</p>
       <p class="read-more"><a href="{{ post.url | relative_url }}">Read more</a></p>
 

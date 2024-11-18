@@ -16,11 +16,22 @@ layout: default
 <div class="longform-text">
     {{ content }}
 
-    {% if page.author %}
+    <!-- {% if page.author %}
         {% assign author = site.authors | where: "name", page.author | first %}
         {% if author %}
             {% include about-author.html 
                 author = page.author %}
             {% endif %}
+    {% endif %} -->
+
+    {% if page.authors %}
+        {% assign allAuthors = "" | split: ',' %}
+        {% for authorStr in page.authors %}
+                {% assign authorObj = site.authors | where: "name", authorStr | first %}
+                {% assign allAuthors = allAuthors | push: authorObj %}
+        {% endfor %}
+
+        {% include about-author-multiple.html %}
+
     {% endif %}
 </div> 

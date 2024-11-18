@@ -1,0 +1,31 @@
+<hr>
+
+{% if allAuthors.size > 1 %}
+    <h2>About the Authors</h2>
+{% else %}
+    <h2>About the Author</h2>
+{% endif %}
+
+{% for author in allAuthors %}
+
+    <h3><a href="{{ author.url | relative_url}}">{{ author.name }}</a></h3>
+    <h4>{{ author.position }}</h4>
+
+    {% if author.img %}
+
+        {% assign imgUrl = author.img | prepend: "/assets/img/authors/" %}
+        <img src="{{ imgUrl | relative_url }}" class="bio-img">
+
+    {% endif %}
+
+    <div>
+        {{ author.content }}
+    </div>
+
+    <p></p>
+
+    <!-- {% unless forloop.last %}
+        <p>
+    {% endunless %} -->
+
+{% endfor %}
