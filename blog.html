@@ -1,0 +1,31 @@
+---
+layout: default
+title: Blog
+---
+<h1>Latest Posts</h1>
+
+<div class="longform-text">
+
+    <p>If you want, write some text introducing your blog posts.</p>
+    
+    <p>You can even write some more text here.</p>
+    
+    <hr>
+
+  {% for post in site.posts %}
+
+      <h3>{{ post.date | date_to_string }}</h3>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      {% if post.author %}
+        <h3>By {{ post.author }}</h3>
+      {% endif %}
+      <p>{{ post.excerpt }}</p>
+      <p class="read-more"><a href="{{ post.url | relative_url }}">Read more</a></p>
+
+    {% unless forloop.last == true %}
+        <hr>
+    {% endunless %}
+
+  {% endfor %}
+
+</div>

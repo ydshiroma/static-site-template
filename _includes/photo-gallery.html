@@ -1,0 +1,79 @@
+<div class="photo-gallery">
+  <!-- The grid: four columns -->
+  <!-- <div class="row"> -->
+  <div class="thumbnails">
+    {% for photo in photos %}
+        {% assign imgPath = "/assets/img/" | append: photo.fileName %}
+        {% assign imgId = "img" | append: forloop.index %}
+        <!-- <div class="column"> -->
+        <div class="thumbnail">
+        <img
+            src="{{ imgPath | relative_url }}"
+            alt="Insert alt text"
+            id="{{ imgId }}"
+            onclick="myFunction(this);"
+        />
+        </div>
+        {% endfor %}
+    </div>
+
+    {% for photo in photos %}
+        {% assign imgPath = "/assets/img/" | append: photo.fileName %}
+        {% assign divId = "img" | append: forloop.index | append: "expanded" %}
+        <!-- The expanding image container -->
+
+        {% if forloop.index == 1 %}
+            <div class="photo-expanded" id="{{ divId }}" style="display: block">
+        {% else %}
+            <div class="photo-expanded" id="{{ divId }}" style="display: none">
+        {% endif %}
+
+        <!-- Title and expanded image -->
+        <h2>
+            <a href="{{ photo.url }}" target="_blank">{{ photo.displayTitle }}</a>
+        </h2>
+        <!-- <img src="{{ imgPath | relative_url }}" /> -->
+         {% include modal.html
+            imgFile = photo.fileName
+            modalId = forloop.index %}
+
+        <!-- Image description and subjects -->
+        <div>
+            <p>{{ photo.description }}</p>
+            <h3>Pictured here:</h3>
+            <ul>
+                {% if photo.pictured %}
+                    {% assign names = photo.pictured | sort %}
+                    {% for name in names %}
+                        {% assign person = site.data.photo-subjects | where: "name", name | first %}
+                        {% if person %}
+                            {% if name == "Youchigant, Sesostrie" %}
+                                <li><a href="https://diglib.amphilsoc.org/islandora/object/tunica-album?sort_order=ASC&sort_by=title&f%5B0%5D=person_block%3AYouchigant%2C%20Sesostrie" target="_blank">{{ name }}</a></li>
+                            {% else %}
+                                <li><a href="https://diglib.amphilsoc.org/taxonomy/term/{{ person.taxonomy }}" target="_blank">{{ name }}</a></li>
+                            {% endif %}
+                        {% else %}
+                            <li>{{ name }}</li>
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    <li>Unknown</li>
+                {% endif %}
+            </ul>
+        </div>
+        </div>
+    {% endfor %}
+</div>
+
+  <script>
+    function myFunction(img) {
+      let currentContainer = document.querySelector(
+        ".photo-expanded[style*='display: block']"
+      );
+      currentContainer.style.display = "none";
+
+      let imgId = img.id + "expanded";
+      let div = document.getElementById(imgId);
+      div.style.display = "block";
+    }
+  </script>

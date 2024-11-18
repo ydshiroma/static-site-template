@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<h1>All interview excerpts with: {{ page.name }}</h1>
+
+{% include tunica-voices-nav.html %}
+
+{% assign videos = site.tunica-voices | where:"interviewee", page.name %}
+
+{% for video in videos %}
+    {% include video-embed-flex.html %}
+    {% unless forloop.last %}
+            <hr>
+    {% endunless %}
+{% endfor %}

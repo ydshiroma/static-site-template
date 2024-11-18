@@ -1,0 +1,17 @@
+<hr>
+
+<h2>About the Author</h2>
+
+<h3><a href="{{ author.url | relative_url}}">{{ author.name }}</a></h3>
+<h4>{{ author.position }}</h4>
+
+{% if author.img %}
+
+    {% assign imgUrl = author.img | prepend: "/assets/img/authors/" %}
+    <img src="{{ imgUrl | relative_url }}" class="bio-img">
+
+{% endif %}
+
+<div>
+    {{ author.content }}
+</div>

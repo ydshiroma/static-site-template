@@ -1,0 +1,49 @@
+<div>
+    {% if page.layout != "video" %}
+            <h3 class="video-title"><a href="{{ video.url | relative_url }}" class="no-decoration-link">{{ video.title }}</a></h3>
+        {% endif %}
+    <!-- Display title and video in column 1 -->
+    <div class="video-embed">
+    <div class="videoPlayerColumn">
+        <!-- {% if page.layout != "video" %}
+            <h3 class="video-title"><a href="{{ video.url | relative_url }}" class="no-decoration-link">{{ video.title }}</a></h3>
+        {% endif %} -->
+        <video class="video-sized" controls="">
+            <source src="{{ video.link }}" type="video/ogg">
+            <source src="{{ video.link }}" type="video/mp4">
+        </video>
+    </div>
+    <!-- Display video description and metadata in column 2 -->
+    <div class="videoDescriptionColumn">
+        <!-- Display description and image (if included) -->
+         {% if video.content %}
+        <p>{{ video.content }}</p>
+        {% endif %}
+        {% if video.img %}
+            {% include modal-figure.html
+                modalId = forloop.index
+                imgFile = video.img
+                imgAlt = ""
+                imgSize = "max-height:250px;max-width: 300px"
+                imgCaption = ""
+            %}
+        {% endif %}
+        <!-- If interviewee is listed and this is NOT an interviewee page, display interviewee -->
+        {% if video.interviewee and page.layout != "interviewee" %}
+            {% assign intervieweeRecord = site.tunica-voices | where:"name", video.interviewee | first %}
+            <p>Interviewee: <a href="{{ intervieweeRecord.url | relative_url }}">{{ video.interviewee }}</a></p>
+        <!-- If interviewee page, display category -->
+            {% elsif page.layout == "interviewee" %}
+            {% assign categoryRecord = site.tunica-voices | where:"title", video.category | first %}
+            <p>Category: <a href="{{ categoryRecord.url | relative_url }}">{{video.category}}</a></p>
+        {% endif %}
+        <!-- If appearing on main page, include link to view more in this category -->
+        {% if page.title == "Tunica Voices" %}
+            {% assign categoryRecord = site.tunica-voices | where:"title", video.category | first %}
+            <a href="{{  categoryRecord.url | relative_url }}">
+                <h3>Learn more about {{ video.category }}</h3>
+            </a>
+        {% endif %}
+    </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/examplesite" # the subpath of your site, e.g. /blog
+title: "Example Static Site" # the name of your site, e.g. ACME Corp.
+description: "Static site template for use for projects developed at the American Philosophical Society."
+markdown: kramdown
+collections:
+  authors:
+    output: true
+  tunica-voices:
+    output: true
+page_excerpts: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"

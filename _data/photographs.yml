@@ -1,0 +1,84 @@
+- url: https://diglib.amphilsoc.org/islandora/object/graphics%3A9766
+  fileName: 10-27-e-merlin-pierite.jpg
+  title: "10-27-e: Merlin Pierite with stickball sticks"
+  displayTitle: Merlin Pierite with stickball sticks
+  description: "Black and white photo of a man (Merlin Pierite) dressed in overalls, holding two stickball sticks."
+  collection: "Frank G. Speck Papers"
+  pictured:
+    - "Pierite, Merlin"
+
+- url: https://diglib.amphilsoc.org/islandora/object/graphics%3A9760
+  fileName: 10-26-k-anna-mae-pierite-juneau.jpg
+  title: "10-26-k: Anna Mae Pierite Juneau, Joseph Pierite, Jr., and Norma Pierite Khawaja"
+  displayTitle: Anna Mae Pierite Juneau, Joseph Pierite, Jr., and Norma Pierite Khawaja
+  description: "Black and white photo of a girl (Anna Mae Pierite Juneau), a young man (Joseph Pierite, Jr.), and a young woman (Norma Pierite Khawaja), standing outside wearing traditional Tunica headdresses."
+  collection: "Frank G. Speck Papers"
+  pictured: 
+    - "Juneau, Anna Mae Pierite"
+    - "Pierite, Joseph, Jr."
+    - "Khawaja, Norma Pierite"
+
+- url: https://diglib.amphilsoc.org/islandora/object/graphics%3A9756
+  fileName: 10-26-g-tunica-group-assembled.jpg
+  title: "10-26-g: Tunica group assembled outside home"
+  displayTitle: Tunica group assembled outside home (I)
+  description: "Black and white photo of a group of people assembled outside a home in the distance. Includes Chief Horace Pierite, Sr., Merlin Pierite, Joseph Pierite, Sr., and Arthur Joseph Bordelon."
+  collection: "Frank G. Speck Papers"
+  pictured:
+    - "Pierite, Horace, Sr."
+    - "Pierite, Merlin"
+    - "Pierite, Joseph, Sr."
+    - "Bordelon, Arthur Joseph"
+
+- url: https://diglib.amphilsoc.org/islandora/object/graphics%3A9765
+  fileName: 10-27-d-tunica-group-assembled.jpg
+  title: "10-27-d: Tunica group assembled outside home"
+  displayTitle: Tunica group assembled outside home (II)
+  description: 'Black and white photo of a group of Tunica people (Merlin Pierite, Joseph Pierite, Sr., Anglaise "English" Barbry, Arthur Joseph Bordelon, Chief Horace Pierite, Sr., Joseph "Babe" Barbry) and a man in a suit (Frank Speck) assembled outside a home.'
+  collection: "Frank G. Speck Papers"
+  pictured:
+    - "Speck, Frank Gouldsmith"
+    - "Pierite, Merlin"
+    - "Pierite, Joseph, Sr."
+    - "Barbry, Anglaise"
+    - "Pierite, Horace, Sr."
+    - "Barbry, Joseph"
+    - "Bordelon, Arthur Joseph"
+
+- url: https://diglib.amphilsoc.org/islandora/object/graphics%3A9750
+  fileName: 10-26-a-anglaise-barbry.jpg
+  title: '10-26-a: Anglaise "English" Barbry and older woman'
+  displayTitle: 'Anglaise "English" Barbry and older woman'
+  description: 'Black and white portrait of two women (Anglaise "English" Barbry and an older unidentified woman) seated outside.'
+  collection: "Frank G. Speck Papers"
+  pictured:
+    - "Barbry, Anglaise"
+
+- url: https://diglib.amphilsoc.org/islandora/object/graphics%3A1693
+  fileName: haas-alice-picote-sam-young-sesostrie.jpg
+  title: Alice Picote, Sam Young Sesostrie, Cora Chiki
+  displayTitle: Alice Picote, Sam Young Sesostrie, Cora Chiki
+  description: "Black-and-white portrait photograph of Alice Picote, left, standing; Sesostrie Youchigant, seated in center; and Cora Chiki, right, standing."
+  collection: "Mary R. Haas Papers"
+  pictured:
+    - "Youchigant, Sesostrie"
+    - "Picote, Alice"
+    - "Chiki, Cora"
+
+- url: https://diglib.amphilsoc.org/islandora/object/graphics%3A1689
+  fileName: haas-papers-print-13-peggy-leaf.jpg
+  title: Print 13. Peggy Leaf
+  displayTitle: Peggy Leaf
+  description: Black and white photograph of Tunica woman (Peggy Leaf) in front of dwelling at Vian, Oklahoma.
+  collection: "Mary R. Haas Papers"
+  pictured:
+    - "Leaf, Peggy"
+
+- url: https://diglib.amphilsoc.org/islandora/object/graphics%3A8059
+  fileName: haas-papers-sesostrie-youchigant.jpg
+  title: Print 06. Sesostrie Youchigant
+  displayTitle: Sesostrie Youchigant
+  description: Black and white photograph of Sesostrie Youchigant, speaker of Tunica language who worked with Mary Haas, in front of dwelling at Eufaula, Oklahoma.
+  collection: "Mary R. Haas Papers"
+  pictured:
+    - "Youchigant, Sesostrie"

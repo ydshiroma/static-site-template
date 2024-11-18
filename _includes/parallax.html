@@ -1,0 +1,16 @@
+<div alt="{{ include.alt }}" class="parallax {{ include.cssClass }}" style="background-image: url(&quot;{{ include.img_url | relative_url }}&quot;);">
+  <div class="parallax-text">
+    {% if page.image.banner_text %}
+      <h1> {{ include.banner_text }}</h1>
+    {% endif %}
+  </div>
+</div>
+{% if include.caption %}
+<div class="parallax-caption">
+  {% if include.caption_url %}
+    <a href="{{ include.caption_url }}" target="_blank" rel="noopener noreferrer">{{ include.caption }}</a>
+  {% else %}
+    {{ include.caption }}
+  {% endif %}
+</div>
+{% endif %}

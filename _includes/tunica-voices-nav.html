@@ -1,0 +1,20 @@
+<!-- {% assign categories = "Introduction, Tunica History, Music and Traditions, Connecting Generations, Language Reawakening, Traditional Crafts" | split: ", " %}
+{{ categories }} -->
+
+{% assign categories = site.tunica-voices | where:"layout", "tunica-voices-category" | sort:"navOrder" %}
+
+<nav class="nav nav-pills flex-column flex-sm-row">
+    {% if page.title == "Tunica Voices" %}
+        <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="{{ '/tunica-voices' | relative_url }}">Highlights</a>
+    {% else %}
+        <a class="flex-sm-fill text-sm-center nav-link" href="{{ '/tunica-voices' | relative_url }}">Highlights</a>
+    {% endif %}
+    {% for category in categories %}
+        {% if page.title == category.title or page.category == category.title %}
+            <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="{{ category.url | relative_url }}">{{ category.title }}</a>
+        {% else %}
+            <a class="flex-sm-fill text-sm-center nav-link" href="{{ category.url | relative_url }}">{{ category.title }}</a>
+        {% endif %}
+    {% endfor %}
+</nav>
+<hr>

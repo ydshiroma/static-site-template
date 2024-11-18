@@ -1,0 +1,31 @@
+<!-- Set up variables needed for template -->
+
+{% unless include.modalId %}
+    {% assign include.modalId = "1" %}
+{% endunless %}
+
+{% assign imgUrl = include.imgFile | prepend: "/assets/img/" %}
+
+<div>
+    <!-- Trigger the Modal -->
+     
+    <figure class="figure">
+        <img src="{{ imgUrl | relative_url }}" class="figure-img img-fluid modalImg" alt="{{ include.imgAlt }}" style="{{ include.imgSize }}" href="{{ '#modal' | append: include.modalId }}">
+        <figcaption class="figure-caption">{{ include.imgCaption }}</figcaption>
+    </figure>
+
+    <!-- The Modal -->
+    <div id="{{ 'modal' | append: include.modalId }}" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" src="{{ imgUrl | relative_url }}" alt="{{ include.imgAlt }}">
+
+    {% if include.imgCaption %}
+    <!-- Modal Caption (Image Text) -->
+    <div class="modalCaption">{{ include.imgCaption }}</div>
+    {% endif %}
+    </div> 
+</div>

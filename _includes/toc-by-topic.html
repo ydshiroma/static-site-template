@@ -1,0 +1,36 @@
+<div class="accordion" id="toc-by-topic-accordion">
+    <div class="accordion-item">
+        {% for entry in site.data.notebooks-by-topic %}
+            {% assign panelId = "tocByTopicPanel" | append: forloop.index %}
+            {% assign buttonId = "tocByTopicButton" | append: forloop.index %}
+            {% assign panelCollapseId = "tocByTopicPanelCollapse" | append: forloop.index %}
+            {% assign dataBsTarget = "#tocByTopicPanelCollapse" | append: forloop.index %}
+            <h2 class="accordion-header" id="{{ panelId }}">
+            <button class="accordion-button collapsed" type="button" id="{{ buttonId }}" data-bs-toggle="collapse" data-bs-target="{{ dataBsTarget }}" aria-expanded="false" aria-controls="{{ panelCollapseId }}">
+                <h2>
+                   {{ entry.topic }}
+                </h2>
+            </button>
+            </h2>
+            <div id="{{ panelCollapseId }}" class="accordion-collapse collapse" aria-labelledby="{{ panelId }}">
+            <div class="accordion-body">
+                <ul>
+                    {% for section in entry.contents %}
+                        {% if section[1].notebook %}
+                            {% assign sourceNotebook = site.data.notebooks | where: "number", section[1].notebook | first %}
+                            {% assign pageUrl = sourceNotebook.url | append: "?page=" | append: section[1].page %}
+                            <li>
+                                <a href="{{ pageUrl }}" target="_blank" class="no-decoration-link">{{ section[0] }}</a>
+                            </li>
+                        {% else %}
+                            <li>
+                                <s>{{ section[0] }}</s>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

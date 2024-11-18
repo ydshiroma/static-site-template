@@ -1,0 +1,40 @@
+<div class="accordion" id="toc-accordion">
+    <div class="accordion-item">
+        {% for notebook in site.data.notebooks %}
+            {% assign panelId = "panel" | append: forloop.index %}
+            {% assign buttonId = "button" | append: forloop.index %}
+            {% assign panelCollapseId = "panelCollapse" | append: forloop.index %}
+            {% assign dataBsTarget = "#panelCollapse" | append: forloop.index %}
+            <div class="accordion-header" id="{{ panelId }}">
+            <button class="accordion-button collapsed" type="button" id="{{ buttonId }}" data-bs-toggle="collapse" data-bs-target="{{ dataBsTarget }}" aria-expanded="false" aria-controls="{{ panelCollapseId }}">
+                {% assign notebookname = "Notebook " | append: notebook.number | append: " (" | append: notebook.date | append: ")" %}
+                <h2>
+                    {% if notebook.title %}
+                        {{ notebookname | append: ": " | append: notebook.title }}
+                    {% elsif notebook.number == 13 %}
+                        <s>Notebook 13</s>
+                    {% else %}
+                        {{ notebookname }}
+                    {% endif %}
+                </h2>
+            </button>
+        </div>
+            <div id="{{ panelCollapseId }}" class="accordion-collapse collapse" aria-labelledby="{{ panelId }}">
+            <div class="accordion-body">
+                <p><i>{{ notebook.description }}</i></p>
+                {% if notebook.url %}
+                    <p><a href="{{ notebook.url }}" target="_blank">View full notebook</a></p>
+                {% endif %}
+                <ul>
+                    {% for section in notebook.contents %}
+                        <li>
+                            {% assign pageUrl = notebook.url | append: "?page=" | append: section[0] %}
+                            <a href="{{ pageUrl }}" target="_blank" class="no-decoration-link">{{ section[1] }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
