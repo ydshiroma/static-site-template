@@ -1,7 +1,7 @@
 ---
 layout: essay
 title: Example Long-form Text
-author: Yumi Dineen Shiroma
+authors: Yumi Dineen Shiroma
 ---
 This template can be used for longform text. You can also insert an image, for example:
 

@@ -22,8 +22,8 @@ permalink: /essays/
 
 {% for page in essays %}
     <h2><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h2>
-    {% if page.author %}
-        <h3>By {{ page.author }}</h3>
+    {% if page.authors %}
+        <h3>By {{ page.authors | join: " and " }}</h3>
     {% endif %}
     <p>{{ page.excerpt }}</p>
     <p class="read-more"><a href="{{ page.url | relative_url }}">Read more</a></p>

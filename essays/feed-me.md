@@ -1,7 +1,7 @@
 ---
 layout: essay
 title: FEED ME
-author: Signora Neroni
+authors: Signora Neroni
 display-order: 1
 ---
 

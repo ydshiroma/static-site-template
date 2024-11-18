@@ -1,7 +1,9 @@
 ---
 layout: essay
-title: Text with Hyperlinked Footnotes
-author: Yumi Dineen Shiroma
+title: Text with Hyperlinked Footnotes and Multiple Authors
+authors:
+  - Signora Neroni
+  - Yumi Dineen Shiroma
 display-order: -1
 ---
 
