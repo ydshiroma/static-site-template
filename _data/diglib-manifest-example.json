@@ -1,0 +1,13 @@
+{
+  "@type": "sc:Manifest",
+  "@id": "https://diglib.amphilsoc.org/node/71022/manifest",
+  "label": "The Rights of Man; - or - Tommy Paine, the little American Taylor, taking the Measure of the Crown, for a new Pair of Revolution Breeches",
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "sequences": [
+    {
+      "@context": "http://iiif.io/api/presentation/2/context.json",
+      "@id": "https://diglib.amphilsoc.org/node/71022/sequence/normal",
+      "@type": "sc:Sequence"
+    }
+  ]
+}

@@ -37,7 +37,7 @@ You can also include nav cards (below) to link out to different pages on your si
       </div>
     </div>
   </a>
-    <a href="{{ '/additional-resources/photographs' | relative_url }}">
+    <a href="{{ '/photographs' | relative_url }}">
     <div class="nav-card-square" style="background-image: url(&quot;{{ 'assets/img/square-picote-sesostrie.jpg' | relative_url }}&quot;);">
       <div class="card-text">
         Photo Gallery

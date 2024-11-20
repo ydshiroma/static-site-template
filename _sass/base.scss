@@ -407,23 +407,27 @@ ul.icons li {
   font-size: 3em;
 }
 
+// Table formatting
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+td {
+  padding: 0 1rem;
+}
+
 // Parallax images
 
 .parallax {
   /* Set a specific height */
   height: 100%;
-  // max-height: 100%;
-  // width: 100%;
-  // padding-top: 50px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // display: flex;
-  // flex-direction: column;
-  // background-size: contain;
 }
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */

@@ -18,7 +18,11 @@ title: Blog
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
 
       {% if post.authors %}
-        <h3>By {{ post.authors | join: " and " }}</h3>
+        {% if post.authors.size > 2 %}
+            <h3>By {{ post.authors | join: ", " }}</h3>
+        {% else %}
+            <h3>By {{ post.authors | join: " and " }}</h3>
+        {% endif %}
       {% endif %}
       
       <p>{{ post.excerpt }}</p>

@@ -1,0 +1,162 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@type": "sc:Manifest",
+  "@id": "https://cdm16003.contentdm.oclc.org/iiif/p9539coll1:23612/manifest.json",
+  "label": "\"Look after my folks\" : Navy Relief Society official relief organization of the U.S. Navy cares for the Navy's widows and orphans subscriptions received by any bank or the Emergency Fund Committee 280 Broadway, New York City.",
+  "metadata": [
+    {
+      "label": "Call Number",
+      "value": "priWWI_XL_32"
+    },
+    {
+      "label": "Creator",
+      "value": "Brangwyn, Frank, 1867-1956, artist.;American Lithographic Co., printer."
+    },
+    {
+      "label": "Date Searchable",
+      "value": "1914; 1915; 1916; 1917; 1918; 1919; 1920"
+    },
+    {
+      "label": "Date",
+      "value": "approximately 1917"
+    },
+    {
+      "label": "Description",
+      "value": "Prints, advertising; Image of an American sailor calling out and pointing from a ship deck, with four sailors holding poles behind him, and sinking, damaged ships and smoke visible in the ocean in the background; the poster promotes giving to the Navy Relief Society of the United States Navy during World War I."
+    },
+    {
+      "label": "Digital Collection",
+      "value": "Prints and Ephemera, Huntington Digital Library"
+    },
+    {
+      "label": "Digitization Specifications",
+      "value": "High resolution."
+    },
+    {
+      "label": "Catalog Link",
+      "value": "http://www.oac.cdlib.org/findaid/ark:/13030/c86h4kqh"
+    },
+    {
+      "label": "Form/Genre",
+      "value": "Lithographs -- Color -- 1900-1925. (gmgpc) ; War posters -- American -- 1910-1920. (gmgpc)"
+    },
+    {
+      "label": "Notes",
+      "value": "Date supplied by cataloger based on date provided for copy held by the Library of Congress.  \"Frank Brangwyn A.R.A. Autolithograph\"--text, lower left margin. \"F B\"--text, artist's initials in stone, bottom right of image. \"American Lithographic Co. N.Y.\"--text, lower right margin."
+    },
+    {
+      "label": "Physical Collection",
+      "value": "Huntington Collection"
+    },
+    {
+      "label": "Physical Sub-Collection",
+      "value": "World War I"
+    },
+    {
+      "label": "Physical Series",
+      "value": "Your Country Calls"
+    },
+    {
+      "label": "Physical Description",
+      "value": "1 lithograph : color printed ; overall 103.82 x 68.74 cm (40 7/8 x 27 1/16 in.)"
+    },
+    {
+      "label": "Place of creation",
+      "value": "New York (N.Y.)"
+    },
+    {
+      "label": "Rights",
+      "value": "For information on use of Digital Library materials, please see Library Rights and Permissions: https://www.huntington.org/library-rights-permissions"
+    },
+    {
+      "label": "Subjects",
+      "value": "Charities -- United States. ; Naval battles -- Pictorial works. ; Sailors -- Pictorial works. ; Ships -- Pictorial works. ; World War, 1914-1918 -- Social aspects -- United States. ;"
+    },
+    {
+      "label": "Local Subjects",
+      "value": "Navy Relief Society ; United States. Navy"
+    },
+    {
+      "label": "Title",
+      "value": "\"Look after my folks\" : Navy Relief Society official relief organization of the U.S. Navy cares for the Navy's widows and orphans subscriptions received by any bank or the Emergency Fund Committee 280 Broadway, New York City."
+    },
+    {
+      "label": "Unique Digital Identifier",
+      "value": "414763"
+    },
+    {
+      "label": "Repository",
+      "value": "Huntington Digital Library"
+    },
+    {
+      "label": "Source",
+      "value": "\u003Cspan\u003EFrom: \u003Ca href=\"https://hdl.huntington.org/digital/collection/p9539coll1/id/23612\"\u003E\"Look after my folks\" : Navy Relief Society official relief organization of the U.S. Navy cares for the Navy's widows and orphans subscriptions received by any bank or the Emergency Fund Committee 280 Broadway, New York City.\u003C/a\u003E\u003C/span\u003E"
+    }
+  ],
+  "attribution": [
+    "",
+    "For information on use of Digital Library materials, please see Library Rights and Permissions: https://www.huntington.org/library-rights-permissions"
+  ],
+  "seeAlso": {
+    "@id": "https://cdm16003.contentdm.oclc.org/oai/oai.php?verb=GetRecord&identifier=oai:cdm16003.contentdm.oclc.org:p9539coll1/23612&metadataPrefix=oai_qdc",
+    "format": "application/xml",
+    "profile": "http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"
+  },
+  "within": "https://cdm16003.contentdm.oclc.org/iiif/p9539coll1/manifest.json",
+  "sequences": [
+    {
+      "@id": "https://cdm16003.contentdm.oclc.org/iiif/p9539coll1:23612/sequence/s0",
+      "@type": "sc:Sequence",
+      "label": "\"Look after my folks\" : Navy Relief Society official relief organization of the U.S. Navy cares for the Navy's widows and orphans subscriptions received by any bank or the Emergency Fund Committee 280 Broadway, New York City.",
+      "canvases": [
+        {
+          "@id": "https://cdm16003.contentdm.oclc.org/iiif/p9539coll1:23612/canvas/c0",
+          "@type": "sc:Canvas",
+          "label": "\"Look after my folks\" : Navy Relief Society official relief organization of the U.S. Navy cares for the Navy's widows and orphans subscriptions received by any bank or the Emergency Fund Committee 280 Broadway, New York City.",
+          "images": [
+            {
+              "@id": "https://cdm16003.contentdm.oclc.org/iiif/p9539coll1:23612/annotation/a0",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://cdm16003.contentdm.oclc.org/iiif/2/p9539coll1:23612/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://cdm16003.contentdm.oclc.org/iiif/2/p9539coll1:23612",
+                  "width": 2060,
+                  "height": 3000,
+                  "tiles": [
+                    {
+                      "width": 2060,
+                      "scaleFactors": [1, 2, 4, 8, 16]
+                    }
+                  ],
+                  "profile": "http://iiif.io/api/image/2/level1.json",
+                  "protocol": "http://iiif.io/api/image"
+                },
+                "format": "image/jpeg",
+                "width": 2060,
+                "height": 3000
+              },
+              "on": "https://cdm16003.contentdm.oclc.org/iiif/p9539coll1:23612/canvas/c0"
+            }
+          ],
+          "width": 2060,
+          "height": 3000
+        }
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "@id": "https://cdm16003.contentdm.oclc.org/iiif/p9539coll1:23612/range/r0",
+      "@type": "sc:Range",
+      "label": "\"Look after my folks\" : Navy Relief Society official relief organization of the U.S. Navy cares for the Navy's widows and orphans subscriptions received by any bank or the Emergency Fund Committee 280 Broadway, New York City.",
+      "ranges": [],
+      "canvases": [
+        "https://cdm16003.contentdm.oclc.org/iiif/p9539coll1:23612/canvas/c0"
+      ]
+    }
+  ]
+}
