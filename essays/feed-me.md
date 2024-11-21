@@ -3,6 +3,7 @@ layout: essay
 title: FEED ME
 authors: Signora Neroni
 display-order: 1
+img: cat-head.jpg
 ---
 
 I am a tiny cat and I am so hungry. I have never been fed before in my life. Please... open a can and feed me. FEED ME! I AM STARVING! FEED ME!

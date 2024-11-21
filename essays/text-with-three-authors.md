@@ -2,10 +2,11 @@
 layout: essay
 title: Text with Three Authors
 authors:
-  - Signora Neroni
   - Yumi Dineen Shiroma
-  - Someone Else
+  - Signora Neroni
+  - Demon
 display-order: 100
+img: paine.jpg
 ---
 Voluptate lyft fingerstache, cloud bread minim subway tile eu narwhal selvage. Heirloom tempor veniam quinoa paleo skateboard, etsy organic sus umami ut occaecat raclette hot chicken. Ugh paleo keytar reprehenderit, esse trust fund food truck dreamcatcher shabby chic. Green juice organic blackbird spyplane irure, sriracha do activated charcoal tumeric hammock you probably haven't heard of them mumblecore.
 

@@ -211,6 +211,10 @@ main a {
   text-decoration: underline;
 }
 
+.footnote-link {
+  text-decoration: none;
+}
+
 main p {
   text-align: justify;
   text-justify: inter-word;
@@ -284,9 +288,11 @@ a:hover .navbar-brand-secondary {
   color: $alt-color-2;
 }
 
-.navbar-toggler, .navbar-toggler-icon {
-  background-color: $link-color !important;
-}
+// Use code below to change the color of the toggler that displays the navbar on a small screen
+
+// .navbar-toggler, .navbar-toggler-icon {
+//   background-color: $link-color !important;
+// }
 
 // Scroll formatting
 
@@ -581,7 +587,7 @@ main > p {
   // max-width: 100%;
 }
 
-.nav-cards a {
+.nav-cards a, .nav-cards-stacked a {
   text-decoration: none;
 }
 
@@ -590,6 +596,19 @@ main > p {
   height: 18rem;
   width: 18rem;
   background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.nav-card-full-width {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 24rem;
+  width: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;

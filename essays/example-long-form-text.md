@@ -2,6 +2,7 @@
 layout: essay
 title: Example Long-form Text
 authors: Yumi Dineen Shiroma
+img: washington-square.jpg
 ---
 This template can be used for longform text. You can also insert an image, for example:
 
